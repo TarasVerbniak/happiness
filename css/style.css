@@ -138,3 +138,11 @@ footer{
     background-color: #e8491d;
     text-align: center;
 }
+
+.textContainer{
+    margin-top: 10px;
+    padding: 5px 20px;
+    background-color: #dcdcdc;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}

@@ -60,6 +60,7 @@ header #branding h1{
 header nav{
     float: right;
     margin-top: 10px;
+    margin-right: -8px;
 }
 
 header .highlight, header .current a{
@@ -92,8 +93,7 @@ header a:hover{
 
 
 /*Newsletter*/
-#newsletter{
-    padding: 50px;
+#newsletter{;
     color: #ffffff;
     background: #35424a;
 }
@@ -105,6 +105,7 @@ header a:hover{
 #newsletter form{
     float: right;
     margin-top: 15px;
+    margin-right: 10px;
 }
 
 #newsletter input[type = "email"]{
@@ -145,4 +146,100 @@ footer{
     background-color: #dcdcdc;
     border-radius: 5px;
     margin-bottom: 40px;
+}
+
+header  .disabled{
+    pointer-events: none;
+}
+
+/*Quotes*/
+#quotesBlock ul{
+    margin: 0;
+    padding: 0;
+}
+
+.quote{
+    list-style-type: none;
+}
+
+/*Media Queries*/
+@media (max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #showcase h1{
+        margin-top: 40px;
+    }
+
+    #newsletter button{
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    #newsletter form input[type="email"]{
+        width: 98%;
+    }
+    #boxes .box{
+        float: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    #newsletter h1,
+    #newsletter form{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    #newsletter button{
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    #newsletter form input[type="email"]{
+        width: 98%;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    article .quote{
+        float: left;
+        width: 50%;
+    }
+    .textContainer{
+        min-height: 150px;
+        margin-right: 10px;
+    }
+    #boxes .box{
+        width: 46%;
+    }
+}
+
+@media screen and (min-width: 1224px){
+    article .quote{
+        float: left;
+        width: 33%;
+    }
+    .textContainer{
+        min-height: 150px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .page-title{
+        padding-left: 10px;
+    }
+    #boxes .box{
+        width: 31%;
+    }
 }
